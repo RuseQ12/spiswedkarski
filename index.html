@@ -32,21 +32,38 @@
     <input type="checkbox" id="ryba" value="bolen"> Boleń <br>
     <input type="checkbox" id="ryba" value="sandacz"> Sandacz <br>
     <h3> Ilość Ryb Złowionych: </h3>
-    <input type="checkbox" id="ilosc" value="0-10"> 0-10 <br>
-    <input type="checkbox" id="ilosc" value="11-20"> 11-20 <br>
-    <input type="checkbox" id="ilosc" value="21-30"> 21-30 <br>
-    <input type="checkbox" id="ilosc" value="31-40"> 31-40 <br>
-    <input type="checkbox" id="ilosc" value="41-50"> 41-50 <br>
-    <input type="checkbox" id="ilosc" value="51-60"> 51-60 <br>
-    <input type="checkbox" id="ilosc" value="61-70"> 61-70 <br>
-    <input type="checkbox" id="ilosc" value="71-80"> 71-80 <br>
-    <input type="checkbox" id="ilosc" value="81-90"> 81-90 <br>
-    <input type="checkbox" id="ilosc" value="91-100"> 91-100 <br>
-    <input type="checkbox" id="ilosc" value="100"> Wiecej Niż 100 <br>
+    <input type="radio" id="ilosc" value="0-10"> 0-10 <br>
+    <input type="radio" id="ilosc" value="11-20"> 11-20 <br>
+    <input type="radio" id="ilosc" value="21-30"> 21-30 <br>
+    <input type="radio" id="ilosc" value="31-40"> 31-40 <br>
+    <input type="radio" id="ilosc" value="41-50"> 41-50 <br>
+    <input type="radio" id="ilosc" value="51-60"> 51-60 <br>
+    <input type="radio" id="ilosc" value="61-70"> 61-70 <br>
+    <input type="radio" id="ilosc" value="71-80"> 71-80 <br>
+    <input type="radio" id="ilosc" value="81-90"> 81-90 <br>
+    <input type="radio" id="ilosc" value="91-100"> 91-100 <br>
+    <input type="radio" id="ilosc" value="100"> Wiecej Niż 100 <br>
 
-
+    <button onclick="wynik()">Pokaz Wynik (w konsoli)</button>
+    <script>
+        function wynik() {
+            var wynik2_data = document.getElementById("data").value;
+            var wynik2_imie = document.getElementById("imie").value;
+            var wynik2_nazwisko = document.getElementById("nazwisko").value;
+            var wynik2_karta = document.getElementById("karta").value;
+            var wynik2_ryba = document.getElementById("ryba").value;
+            var wynik2_ilosc = document.getElementById("ilosc").value;
+        console.log("Data: ",wynik2_data)
+        console.log("Imie: ",wynik2_imie)
+        console.log("Nazwisko: ",wynik2_nazwisko)
+        console.log("Posiadanie Karty Wedkarskiej: ",wynik2_karta)
+        console.log("Złowione Ryby: ",wynik2_ryba)
+        console.log("Ilość Ryb: ",wynik2_ilosc)
+        }
+    </script>
+<!--
     <input type="text" id="cos"> <br>
-    <button onclick="pokaza()">JEDEN</button>
+    <button onclick="pokaza()">Pokaz</button>
 
 
     <script>
@@ -56,5 +73,7 @@
         console.log(pokazb)
         }
     </script>
+    -->
+    
 </body>
 </html>
